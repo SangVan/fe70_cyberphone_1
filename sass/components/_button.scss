@@ -1,0 +1,46 @@
+.btn {
+  border-radius: 8px;
+  letter-spacing: 0.03rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 0.5rem;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.btn--outline {
+  background: transparent;
+  color: $primary-main;
+  border: 2px solid $primary-main;
+  transition: all 0.5s;
+  padding: 13.5px 44px;
+  &:hover {
+    background-color: $primary-main;
+    color: white;
+  }
+}
+
+.btn--contained {
+  background: linear-gradient(120deg, #60a4f4, #2a73dd);
+  color: white;
+  border: none;
+  transition: all 0.5s;
+  padding: 15.5px 46px;
+  &:hover {
+    opacity: 0.75;
+  }
+}
+
+.btn--buy {
+  background: #f5f9fe;
+  padding: 8px 20px;
+  border: none;
+  color: #2a73dd;
+  box-shadow: 2px 2px 4px #e2ebfc, -2px -2px 4px #fff;
+  transition: all 0.5s;
+  margin: 0;
+  &:hover {
+    box-shadow: inset 1px 1px 3px #e2ebfc, inset -2px -2px 5px #fff;
+  }
+}

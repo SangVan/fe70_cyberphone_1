@@ -1,0 +1,104 @@
+.products {
+  .products__container {
+    padding: 100px 0;
+    text-align: center;
+    .products__title {
+      margin-bottom: 70px;
+      text-align: center;
+      font-size: 3rem;
+      font-weight: 700;
+      color: #1d365e;
+      letter-spacing: 0.015rem;
+      line-height: 1.2;
+    }
+    .products__content {
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: -15px;
+      margin-left: -15px;
+      .products__item {
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+        @include Responsive(LG) {
+          flex: 0 0 33.333333%;
+          max-width: 33.333333%;
+          position: relative;
+          width: 100%;
+          padding-right: 15px;
+          padding-left: 15px;
+        }
+        @include Responsive(MD) {
+          flex: 0 0 50%;
+          max-width: 50%;
+          position: relative;
+          width: 100%;
+          padding-right: 15px;
+          padding-left: 15px;
+        }
+        @include Responsive(SM) {
+          flex: 0 0 100%;
+          max-width: 100%;
+          position: relative;
+          width: 100%;
+          padding-right: 15px;
+          padding-left: 15px;
+        }
+        .card {
+          position: relative;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          min-width: 0;
+          word-wrap: break-word;
+          background-color: #fff;
+          background-clip: border-box;
+          border: 1px solid rgba(0, 0, 0, 0.125);
+          border-radius: 0.25rem;
+          box-shadow: 6px 6px 12px #e2ebfc, -6px -6px 12px #fff;
+          background-color: #f5f9fe;
+          border: none;
+          padding: 30px;
+          margin-bottom: 30px;
+          margin-right: 20px;
+          .card__body {
+            flex: 1 1 auto;
+            min-height: 1px;
+            padding: 1.5rem;
+            .card__top {
+              display: flex;
+              justify-content: space-between;
+              .cardPhone__title {
+                font-size: 20px;
+                font-weight: 700;
+                color: #1d365e;
+                line-height: 1.2;
+                margin-bottom: 1rem;
+              }
+              .cardPhone__text {
+                font-size: 14px;
+                font-weight: 400;
+                color: #1d365e;
+                margin-bottom: 1.5rem;
+                text-align: left;
+              }
+            }
+            .card__footer {
+              display: flex;
+              justify-content: space-between;
+              .card__icon {
+                color: #f9d412;
+                font-size: 16px;
+              }
+            }
+          }
+        }
+        img {
+          box-shadow: 6px 6px 12px #e2ebfc, -6px -6px 12px #fff;
+          border-radius: 8px;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
